@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- se especifica el lenguaje a utilizar dentro de la página -->
+
+<head>
+    <!-- aquí se declaran las páginas de donde se sacaran algunos estilos como el carousel -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.php">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>PRUEBA TURING-IA</title><!-- Titulo de la página-->
+</head>
+
+<body>
+    <header id="header">
+        <div class="menu">
+            <div class="contenedor">
+                <a href="nosotros.php" id="alogo">
+                    <p class="logo">
+                        TURING-IA
+                    </p>
+                </a>
+                <nav>
+                    <ul class="lista-menu">
+                        <li><a href="#">INICO</a></li>
+                        <li><a href="#">NOSOTROS</a></li>
+                        <li><a href="#">SERVICIOS</a></li>
+                        <li><a href="#">TABLEU</a></li>
+                        <li><a href="#">PORTAL</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="contenedor" id="contenedor-sobre-flex">
+            <div class="header-video">
+                <video src="assets/fondo.mp4" autoplay loop playsinline muted></video>
+            </div>
+            <div class="contenedor-sobre">
+                <h1 id="h1-grande">BIENVENIDO</h1>
+                <div class="p">
+                    <p>Hacemos los
+                        datos fáciles de
+                        usar.</p>
+                </div>
+            </div>
+        </div>
+        <div class="redes">
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-12">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1"
+                        href="https://www.facebook.com/Turing-Inteligencia-Artificial-106802521718296" role="button"><i
+                            class="fa fa-facebook-f"></i></a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/IaTuring"
+                        role="button"><i class="fa fa-twitter"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/ia_turing/"
+                        role="button"><i class="fa fa-instagram"></i></a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-outline-light btn-floating m-1"
+                        href="https://mx.linkedin.com/company/turing-inteligencia-artificial" role="button"><i
+                            class="fa fa-linkedin-square"></i></a>
+
+                </section>
+                <!-- Section: Social media -->
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hacemos">
+            <div class="row d-flex justify-content-left">
+                <div class="titulo">
+                    <h1>¿QUÉ HACEMOS?</h1>
+                </div>
+                <div class="contenido">
+                    <h3>Contribuimos con su empresa para mejorar la toma de decisiones a través de sus datos.</h3>
+                </div>
+                <div class="boton">
+                    <button type="button" class="btn btn-outline-primary">LEER MÁS</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="nosotros">
+            <div class="titulo">
+                <h1>¿QUIÉNES SOMOS?</h1>
+        </div>
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                            <h2>Turing-IA, tu mejor opción</h2>
+                            <p>Somos una Empresa de Analítica e Inteligencia de Negocios en México con presencia internacional,
+                                conformada por especialistas en proyectos de Business Analytics. Contamos con mas de 15 años de
+                                experiencia brindando soluciones innovadoras en más de 10 industrias y diferentes áreas
+                                funcionales.
+                                Contamos con los mejores Especialistas en Análisis Descriptivos, Predictivos y Prescriptivos,
+                                equipados con las certificaciones más importantes en el desarrollo de Análisis de Datos mediante
+                                Knowledge Discovery in Database (KDD)</p>
+                    </div>
+    
+                    <div class="col-12 col-md-6">
+                        <img src="https://turing-ia.com/assets/img/nosotros.webp" class="img-fluid">
+                    </div>
+                    <div class="boton">
+                        <button type="button" class="btn btn-outline-primary">CONOCENOS</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="trabajo">
+            <div class="titulo">
+                <h1>NUESTRO TRABAJO</h1>
+            </div>
+            <div class="container mt-5 bg-white d-flex justify-content-center">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="cards-wrapper">
+                                <div class="col-12 col-md-4">
+                                    <div class="card">
+                                        <img src="https://turing-ia.com/assets/img/wholefoodsteaser1.jpg"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Whole Foods Market </h4>
+                                            <p class="card-text">Whole Foods Market democratiza el acceso a los datos en
+                                                sus 460
+                                                tiendas para 18 000 empleadosgracias a Tableau</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="card d-none d-md-block">
+                                        <img class="card-img-top"
+                                            src="https://turing-ia.com/assets/img/mondelezteaser.jpg" alt="Card image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Mondelez International</h4>
+                                            <p class="card-text">Mondelez International digitaliza la adquisición para
+                                                integrar más
+                                                de 160 campos de datos, 28 000
+                                                proveedores y generar
+                                                millones en ahorro de costos
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="card d-none d-md-block">
+                                        <img class="card-img-top"
+                                            src="https://turing-ia.com/assets/img/grupopetersenfallback.jpg"
+                                            alt="Card image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Grupo Petersen </h4>
+                                            <p class="card-text">Grupo Petersen crea una cultura de datos con Tableau
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cards-wrapper">
+                                <div class="col-12 col-md-4">
+                                    <div class="card">
+                                        <img src="https://turing-ia.com/assets/img/redhatteaser.jpg"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Red Hat</h4>
+                                            <p class="card-text">Red Hat adopta el Blueprint de Tableau y Tableau
+                                                Online, y profundiza en la cultura de datos con más
+                                                de 4500 empleados
+                                                en menos de un año</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="card d-none d-md-block">
+                                        <img class="card-img-top"
+                                            src="https://turing-ia.com/assets/img/mondelezteaser.jpg" alt="Card image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Mondelez International</h4>
+                                            <p class="card-text">Mondelez International digitaliza la adquisición para
+                                                integrar más
+                                                de 160 campos de datos, 28 000
+                                                proveedores y generar
+                                                millones en ahorro de costos
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="card d-none d-md-block">
+                                        <img class="card-img-top"
+                                            src="https://turing-ia.com/assets/img/grupopetersenfallback.jpg"
+                                            alt="Card image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Grupo Petersen </h4>
+                                            <p class="card-text">Grupo Petersen crea una cultura de datos con Tableau
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cards-wrapper">
+                                <div class="col-12 col-md-4">
+                                    <div class="card">
+                                        <img src="https://turing-ia.com/assets/img/wholefoodsteaser1.jpg"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Whole Foods Market </h4>
+                                            <p class="card-text">Whole Foods Market democratiza el acceso a los datos en
+                                                sus 460
+                                                tiendas para 18 000 empleadosgracias a Tableau</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="card d-none d-md-block">
+                                        <img class="card-img-top"
+                                            src="https://turing-ia.com/assets/img/verizon-homepage-tile-final-2x.jpg"
+                                            alt="Card image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Verizon</h4>
+                                            <p class="card-text">Verizon usa Tableau para reducir las llamadas de
+                                                soporte en un 43 % y así mejorar la experiencia del
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="card d-none d-md-block">
+                                        <img class="card-img-top"
+                                            src="https://turing-ia.com/assets/img/header_jpmc_1.jpg" alt="Card image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">JPMorgan </h4>
+                                            <p class="card-text">JPMorgan Chase elige Tableau para ofrecer análisis de
+                                                autoservicio y seguir el vertiginoso ritmo de
+                                                los cambios en el
+                                                sector</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
