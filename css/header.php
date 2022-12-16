@@ -2,7 +2,7 @@
 
 <head>
     <!-- aquí se declaran las páginas de donde se sacaran algunos estilos como el carousel -->
-    <link rel="stylesheet" href="css/style.css?v=<?php echo (rand()); ?>">
+    <link rel="stylesheet" href="style.css?v=<?php echo (rand()); ?>">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="owl/owl.carousel.min.css">
     <link rel="stylesheet" href="owl/owl.theme.default.min.css">
@@ -29,13 +29,13 @@
                         "top": "0"
                     });
                     $('.menu').css({
-                        "background": "#868E99"
+                        "background": "#10356d"
                     });
                     $('.menu').css({
                         "opacity": "1"
                     });
                     $('.logo').css({
-                        "color": "#fdcf50"
+                        "color": "#fff"
                     });
                     $('.menu').css({
                         "box-shadow": "rgba(0, 0, 0, .22) 6px 1px 1px"
@@ -48,7 +48,7 @@
                         "position": "relative"
                     });
                     $('.menu').css({
-                        "background": "#868E99"
+                        "background": "#000000"
                     });
                     $('.menu').css({
                         "opacity": "0.75"
@@ -57,7 +57,7 @@
                         "box-shadow": "0 0 0"
                     });
                     $('.logo').css({
-                        "color": "#fdcf50"
+                        "color": "#fff"
                     });
                 }
             })
