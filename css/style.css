@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-/*Estilos de la página principal*/
+/*Estilos del header */
 header .contenedor {
     display: flex; 
     justify-content: space-between; 
@@ -80,6 +80,7 @@ nav ul li a {
     text-align: justify;
     justify-content: center;
 }
+/*Estilos de la página principal*/
 .hacemos{
     padding: 30px;
 }
@@ -166,6 +167,7 @@ nav ul li a {
 }
 .contacto{
     background-color: #f2f3f5;
+    padding-bottom: 20px;
 }
 .contacto h1{
     color: blue;
@@ -238,10 +240,145 @@ footer{
 .certificaciones .container{
     padding-bottom: 40px;
 }
+/*Estilos de la ventana "servicios"*/
+#header3 {
+    background: url(../assets/servicios.jpg);
+    height: 100vh; 
+    background-size: cover; 
+}
+#header3 .p{
+    width: 500px;
+}
+.que-ofrecemos{
+    padding-bottom: 20px;
+}
+.que-ofrecemos h1{
+    color: blue;
+    font-size: 20px;
+    padding-left: 26px;
+    padding-top: 20px;
+}
+.que-ofrecemos h2{
+    font-size: 40px;
+}
+.que-ofrecemos p{
+    color: rgb(91, 91, 102);
+    font-size: 20px;
+}
+
+.que-ofrecemos img{
+    max-height: 300px;
+    border-radius: 50px 20px;
+}
+.expertos{
+    padding-bottom: 20px;
+    background-color: #f2f3f5;
+}
+#cont-tableu {
+    background: url(../assets/fondo3.jpg);
+    background-size: cover; 
+}
+#cont-tableu2 {
+    background: url(../assets/bi.jpg);
+    background-size: cover; 
+}
+#cont-tableu3 {
+    background: url(../assets/ba.jpg);
+    background-size: cover; 
+    height: 200px;
+}
+#cont-tableu4 {
+    background: url(../assets/da.jpg);
+    background-size: cover; 
+}
+#cont-tableu5 {
+    background: url(../assets/ml.jpg);
+    background-size: cover; 
+}
+#cont-tableu6 {
+    background: url(../assets/ia.jpg);
+    background-size: cover; 
+    height: 200px;
+}
+#cont-tableu7 {
+    background: url(../assets/dm.jpg);
+    background-size: cover; 
+}
+#cont-tableu8 {
+    background: url(../assets/bg.jpg);
+    background-size: cover; 
+}
+
+.expertos #abajo{
+    position: absolute;
+    background-color: #3b3f44;
+    color: #f2f3f5;
+    width: 100%;
+    bottom: 0px;
+    border-radius: 5px;
+}
+.expertos #crad-exp{
+    padding-top: 50px;
+}
+#abajo p{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: ui-sans-serif;
+}
+.separador{
+    border: 15px solid white;
+  }
+
+/*Estilos de la página contacto */
+#head-contacto{
+    display: flex; 
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#head-contacto h1{
+    padding-top: 10px;
+    font-weight: bolder;
+    color: blue;
+}
+#head-contacto p{
+    font-weight: bolder;
+    font-size: 50px;
+}
+/*Estilos de la ventana "blog"*/
+#header4 {
+    background: url(../assets/blog.jpg);
+    height: 100vh; 
+    background-size: cover; 
+}
+#header4 .p{
+    width: 425px;
+}
+.blog{
+    padding-bottom: 20px;
+}
+.blog h1{
+    color: blue;
+    font-size: 20px;
+    padding-left: 26px;
+    padding-top: 20px;
+}
+.blog #buscador{
+    width: 100%;
+    justify-content: center;
+}
+.blog #busqueda{
+    border-radius: 5px;
+    border: 1px solid #39c;
+    border-color: blue;
+    height: 30px;
+}
+
+/*Estilos del botón flotante*/
 .btn-wsp{
     position:fixed;
-    width:40px;
-    height:40px;
+    width:60px;
+    height:60px;
     line-height: 63px;
     bottom:25px;
     right:25px;
@@ -254,14 +391,19 @@ footer{
     z-index:100;
     transition: all 300ms ease;
 }
+#footer2 .btn-wsp{
+    padding-top: 8px;
+}
 .btn-wsp:hover{
     background: #20ba5a;
 }
-@media only screen and (min-width:320px) and (max-width:768px){
+/* Cuando la pantalla este dentro de unas medidas las propiedades del botón flotante cambiaran */
+@media only screen and (min-width:320px) and (max-width:900px){
     .btn-wsp{
         width:63px;
         height:63px;
         line-height: 66px;
+        padding-top: 0px;
 	}
 }
   @media (min-width: 768px) {
@@ -271,6 +413,7 @@ footer{
     
   }
 
+/* Cuando la pantalla sea menor a 960px se cambiaran algunas propiedades para hacer la página responsiva */
   @media (max-width: 960px) {
     .content {
       padding: 0 3rem 0 3rem;

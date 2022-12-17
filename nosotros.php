@@ -20,6 +20,7 @@ include "css/header.php";
 </head>
 
 <body>
+    <!-- header de esta página -->
     <header id="header2">
         <div class="menu">
             <div class="contenedor">
@@ -30,18 +31,19 @@ include "css/header.php";
                 </a>
                 <img class="menu-icon" src="assets/menu.png">
                 <nav>
+                    <!-- opciones de la barra -->
                     <ul class="lista-menu">
                         <li><a href="index.php">INICIO</a></li>
                         <li><a href="nosotros.php">NOSOTROS</a></li>
-                        <li><a href="#">SERVICIOS</a></li>
+                        <li><a href="servicios.php">SERVICIOS</a></li>
                         <li><a href="#">TABLEU</a></li>
-                        <li><a href="#">PORTAL</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">CONTACTO</a></li>
+                        <li><a href="blog.php">BLOG</a></li>
+                        <li><a href="contacto.php">CONTACTO</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
+        <!-- Este contenedor contiene una imagen de fondo especificada en el css -->
         <div class="contenedor" id="contenedor-sobre-flex">
             <div class="contenedor-sobre">
                 <h1 id="h1-grande">SOBRE NOSOTORS</h1>
@@ -51,8 +53,9 @@ include "css/header.php";
             </div>
         </div>
     </header>
-
+    <!-- Contenido principal de la página -->
     <main>
+        <!--Section: ¿Quiénes somos? -->
         <section class="quienes-somos">
             <div class="container">
                 <div class="row">
@@ -74,6 +77,7 @@ include "css/header.php";
                 </div>
             </div>
         </section>
+        <!-- Section: Certificaciones -->
         <section class="certificaciones">
             <div class="container">
                 <div class="row">
@@ -139,17 +143,19 @@ include "css/header.php";
             </div>
         </section>
     </main>
-
-    <footer>
+    <!-- Footer-->
+    <footer id="footer2">
+        <!-- Botón flotante de whatsapp -->
         <a href="https://api.whatsapp.com/send?phone=7713917568" class="btn-wsp" target="_blank">
             <i class="fa fa-whatsapp icono"></i>
         </a>
+        <!-- Se incluye el archivo footer -->
         <?php
         include "css/footer.php"
         ?>
     </footer>
 
-
+    <!-- Se importan los scripts utilizados -->  
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"

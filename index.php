@@ -1,5 +1,7 @@
 <?php
-include "css/header.php";
+//Se incluye el archivo header el cual permite que este se quede fijo aunque se scrollee la página
+//Además, cuando la pantalla se hace muy pequeña le permite que cuando se le de click al icono se abran las opciones del navbar
+//include "css/header.php";
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -19,6 +21,7 @@ include "css/header.php";
 </head>
 
 <body>
+    <!-- HEADER -->
     <header id="header">
         <div class="menu">
             <div class="contenedor">
@@ -27,23 +30,25 @@ include "css/header.php";
                         TURING-IA
                     </p>
                 </a>
-                <img class="menu-icon" src="assets/menu.png">
+                <img class="menu-icon"
+                    src="assets/menu.png"><!--Este es el icono que aparece cuando la ventana es muy pequeña-->
                 <nav>
+                    <!-- Opciones del navbar -->
                     <ul class="lista-menu">
                         <li><a href="index.php">INICIO</a></li>
                         <li><a href="nosotros.php">NOSOTROS</a></li>
-                        <li><a href="#">SERVICIOS</a></li>
+                        <li><a href="servicios.php">SERVICIOS</a></li>
                         <li><a href="#">TABLEU</a></li>
-                        <li><a href="#">PORTAL</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">CONTACTO</a></li>
+                        <li><a href="blog.php">BLOG</a></li>
+                        <li><a href="contacto.php">CONTACTO</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
+
         <div class="contenedor" id="contenedor-sobre-flex">
             <div class="header-video">
-                <video src="assets/fondo.mp4" autoplay loop playsinline muted></video>
+                <video src="assets/fondo.mp4" autoplay loop playsinline muted></video><!-- Video de fondo del header -->
             </div>
             <div class="contenedor-sobre">
                 <h1 id="h1-grande">BIENVENIDO</h1>
@@ -54,9 +59,9 @@ include "css/header.php";
                 </div>
             </div>
         </div>
+        <!-- Section: Redes Sociales -->
         <div class="redes">
             <div class="container p-4 pb-0">
-                <!-- Section: Social media -->
                 <section class="mb-12">
                     <!-- Facebook -->
                     <a class="btn btn-outline-light btn-floating m-1"
@@ -77,11 +82,12 @@ include "css/header.php";
                             class="fa fa-linkedin-square"></i></a>
 
                 </section>
-                <!-- Section: Social media -->
             </div>
         </div>
     </header>
+    <!-- Contenido principal de la página -->
     <main>
+        <!-- Section: ¿Qué hacemos? -->
         <section class="hacemos">
             <div class="container">
                 <div class="row d-flex justify-content-left">
@@ -97,7 +103,7 @@ include "css/header.php";
                 </div>
             </div>
         </section>
-
+        <!-- Section: ¿Quiénes somos? -->
         <section class="nosotros">
             <div class="titulo">
                 <h1>¿QUIÉNES SOMOS?</h1>
@@ -129,14 +135,16 @@ include "css/header.php";
             </div>
         </section>
 
-
+        <!-- Section: Nuestro trabajo -->
         <section class="trabajo">
             <div class="titulo">
                 <h1>NUESTRO TRABAJO</h1>
             </div>
+            <!--Esta sección cuenta con un carousel que muestra diferentes cards con el trabajo que ha realizado la empres -->
             <div class="container mt-5 bg-white d-flex justify-content-center">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
+                        <!-- El carousel se divide en 3 cards por sección -->
                         <div class="carousel-item active">
                             <div class="cards-wrapper">
                                 <div class="col-12 col-md-4">
@@ -267,6 +275,7 @@ include "css/header.php";
                             </div>
                         </div>
                     </div>
+                    <!-- Botones que controlan las transiciones del carousel -->
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
@@ -280,6 +289,7 @@ include "css/header.php";
 
         </section>
 
+        <!-- Section: Tecnologías que utilizamos -->
         <section class="tecnologias">
             <div class="titulo">
                 <h1>TECNOLOGÍAS QUE UTILIZAMOS</h1>
@@ -302,11 +312,13 @@ include "css/header.php";
             </div>
         </section>
 
+        <!-- Section: ¿Qué ofrecemos? -->
         <section class="ofrecemos">
             <div class="titulo">
                 <h1>¿QUÉ OFRECEMOS?</h1>
             </div>
             <div class="container mt-2 mb-4 d-flex justify-content-center">
+                <!-- Esta sección contiene un carousel con imagenes y una descripción de lo que ofrece la empresa -->
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -379,6 +391,7 @@ include "css/header.php";
                             </div>
                         </div>
                     </div>
+                    <!-- Controles de Carousel -->
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
@@ -391,82 +404,135 @@ include "css/header.php";
             </div>
         </section>
 
-        <section class="contacto">
+        <!-- Section: Contacto -->
+        <section class="contacto" id="contacto">
             <div class="titulo">
                 <h1>CONTÁCTANOS</h1>
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <form>
+                        <!-- Formulario para contactar con la empreasa -->
+                        <form method="POST" action="correo.php">
                             <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <label for="inputNombre">Nombre</label>
-                                    <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
+                                    <label for="inputNombre">Nombre*</label>
+                                    <input type="text" class="form-control" id="inputNombre" name="name"
+                                        placeholder="Nombre" required>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="inputEmail4">Correo</label>
-                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Correo">
+                                    <label for="inputEmail4">Correo*</label>
+                                    <input type="email" class="form-control" id="inputEmail4" name="email"
+                                        placeholder="Correo" required>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="inputEmpresa">Empresa</label>
-                                    <input type="text" class="form-control" id="inputEmpresa" placeholder="Empresa">
+                                    <input type="text" class="form-control" id="inputEmpresa" name="empresa"
+                                        placeholder="Empresa">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="inputPuesto">Puesto</label>
-                                    <input type="text" class="form-control" id="inputPuesto" placeholder="Puesto">
+                                    <input type="text" class="form-control" id="inputPuesto" name="puesto"
+                                        placeholder="Puesto">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="inputTelefono">Número de Teléfeno</label>
-                                <input type="number" class="form-control" id="inputTelefono" placeholder="Número de Teléfono">
+                                <label for="inputTelefono">Número de Teléfeno*</label>
+                                <input type="number" class="form-control" id="inputTelefono" name="telefono"
+                                    placeholder="Número de Teléfono" required>
                             </div>
                             <div class="form-group">
-                                <label for="inputMensaje">Mensaje</label>
-                                <input type="text" class="form-control" id="inputMensaje"
-                                    placeholder="Escribe tu Mensaje">
+                                <label for="inputMensaje">Mensaje*</label>
+                                <input type="text" class="form-control" id="inputMensaje" name="mensaje"
+                                    placeholder="Escribe tu Mensaje" required>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="inputCiudad">Ciudad</label>
-                                    <input type="text" class="form-control" id="inputCiudad">
+                                    <input type="text" class="form-control" id="inputCiudad" name="ciudad">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="inputState">Estado</label>
-                                    <select id="inputState" class="form-control">
-                                        <option selected>Choose...</option>
-                                        <option>...</option>
-                                    </select>
+                                    <input type="text" id="inputState" class="form-control" name="estado">
                                 </div>
                                 <div class="form-group col-md-2">
                                     <label for="inputCp">C.P.</label>
-                                    <input type="text" class="form-control" id="inputCp">
+                                    <input type="text" class="form-control" id="inputCp" name="cp">
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-outline-primary">Enviar</button>
+                            <button type="submit" class="btn btn-outline-primary" name="enviar">Enviar</button>
                         </form>
+                        <?php 
+                        include("correo.php");
+                        ?>
                     </div>
-
+                    <!-- Mapa con la ubicación de la empresa -->
                     <div class="col-12 col-md-6">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.3374932397705!2d-99.17364388558957!3d19.397818646819566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff7769001035%3A0x8908d745e6168858!2sTuring%20-%20Inteligencia%20Artificial!5e0!3m2!1ses-419!2smx!4v1671131378325!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.3374932397705!2d-99.17364388558957!3d19.397818646819566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff7769001035%3A0x8908d745e6168858!2sTuring%20-%20Inteligencia%20Artificial!5e0!3m2!1ses-419!2smx!4v1671131378325!5m2!1ses-419!2smx"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
 
                 </div>
         </section>
 
+        <!-- Modal por si el correo no se envía -->
+        <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Algo salio mal...</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        No se pudo enviar el correo de manera exitosa. 
+                        Por favor Intentalo de nuevo.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal por si el correo si se envía -->
+        <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Envío exitoso...</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        El correo se envío de manera satisfactoria, espera nustra respuesta en tu correo a lo largo de la semana.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
+        <!-- botón flotante de whatsapp -->
         <a href="https://api.whatsapp.com/send?phone=7713917568" class="btn-wsp" target="_blank">
             <i class="fa fa-whatsapp icono"></i>
         </a>
         <?php
+        //Se incluye el archivo footer el cual contiene el código para insertarlo
         include "css/footer.php"
         ?>
     </footer>
 
-
+    <!-- Se importan los scripts utilizados -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
@@ -478,3 +544,23 @@ include "css/header.php";
 </body>
 
 </html>
+<?php
+//Lineas de código que reciben la variable de la url y determinan que modal abrir
+    $respuesta = $_GET['ok']; 
+    if($respuesta == 2): 
+?>
+        <script>
+            $(function(){
+                $('#errorModal').modal('show');
+            })
+        </script>;
+<?php
+   endif; 
+   if($respuesta == 1): 
+?>
+        <script>
+            $(function(){
+                $('#Modal').modal('show');
+            })
+        </script>;
+<?php endif; ?>

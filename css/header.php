@@ -44,6 +44,7 @@
                         "z-index": "100"
                     });
                 } else {
+                    //Cuanddo el scroll este hasta arriba se vuelve a cambiar la barra
                     $('.menu').css({
                         "position": "relative"
                     });
@@ -61,7 +62,7 @@
                     });
                 }
             })
-
+            //Cuando se le de click al icono se abrira una sección con las opciones de la barra
             $('.menu-icon').click(function() {
                 $('header nav').slideToggle();
             })
