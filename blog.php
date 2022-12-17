@@ -60,7 +60,7 @@ include "css/header.php";
         </div>
         <!-- Búsqueda Google -->
         <div class="row" id="buscador">
-            <form method=GET action="http://www.google.com/search">
+            <form method="GET" action="http://www.google.com/search">
                 <table bgcolor="#FFFFFF">
                     <tr><td>
                         <a href="http://www.google.com/">
